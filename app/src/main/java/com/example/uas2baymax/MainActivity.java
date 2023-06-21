@@ -64,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
         AnimatorSet flipAnimator = (AnimatorSet) AnimatorInflater.loadAnimator(this, R.animator.flip_animation);
         flipAnimator.setTarget(mImgView);
 
-        Animation fadeAnimation = new AlphaAnimation(1.0f, 0.0f);
-        fadeAnimation.setDuration(3000);
         mAnimatorFadeIn1 = ObjectAnimator.ofFloat(mImgView,"alpha",0,1);
         mAnimatorFadeIn1.setDuration(2000);
         mAnimatorFadeOut = ObjectAnimator.ofFloat(mImgView,"alpha",1,0);
